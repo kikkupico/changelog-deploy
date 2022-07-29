@@ -1,6 +1,6 @@
 {
   "functions": {
-    "pages/api/items.index.ts": {
+    "pages/api/items/index.ts": {
       "includeFiles": "data/*"
     }
   }
