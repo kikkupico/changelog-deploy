@@ -1,0 +1,26 @@
+{
+  "release_date": 1658399640,
+  "type": "update",
+  "changelogs": [
+    {
+      "component": "integrations",
+      "type": "feature",
+      "product": "cloud",
+      "tier": "cloud_free",
+      "created_at": 1619576072,
+      "commit_sha": "f012154a29ce09edd05e879fc68cdaf7c2ed82ab",
+      "short_description": "Support for GitHub Deployments",
+      "long_description": "Hasura cloud now integrates with GitHub repositories to automatically deploy migrations and metadata to your project."
+    },
+    {
+      "component": "monitoring",
+      "type": "feature",
+      "product": "cloud",
+      "tier": "cloud_standard",
+      "created_at": 1629252872,
+      "commit_sha": "1ec50339d34c029604b24e5198b0a8dcd2c8defa",
+      "short_description": "Support for Datadog monitoring",
+      "long_description": "GraphQL operation logs and metrics of your project could now be monitored via Datadog."
+    }
+  ]
+}

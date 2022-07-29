@@ -1,0 +1,13 @@
+{
+  "release_date": "1658399640",
+  "type": "patch-release",
+  "changelogs": [
+    {
+      "component": "server",
+      "type": "enhancement",
+      "created_at": 1619576072,
+      "short_description": "Add support to customize the root field for streaming subscriptions (fixes [#8616](https://github.com/hasura/graphql-engine/issues/8618))",
+      "long_description": ""
+    }
+  ]
+}

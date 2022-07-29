@@ -1,0 +1,20 @@
+{
+  "release_date": "1658991036",
+  "type": "stable-release",
+  "changelogs": [
+    {
+      "component": "server",
+      "created_at": 1619577952,
+      "type": "enhancement",
+      "short_description": "Add support for linux/arm64 Docker image (M1 Mac compatible)",
+      "long_description": "Hasura Enterprise Edition Data Plane images are now M1 Mac compatible. The list of compatible images is as follows:\n\n- hasura/graphql-engine-pro:v2.9.0-pro.1\n- hasura/graphql-engine-pro:v2.9.0-pro.1.cli-migrations-v2\n- hasura/graphql-engine-pro:v2.9.0-pro.1.cli-migrations-v3"
+    },
+    {
+      "component": "cli-migrations",
+      "type": "enhancement",
+      "created_at": 1624848352,
+      "short_description": "Support HASURA_GRAPHQL_ADMIN_SECRETS environment variable",
+      "long_description": ""
+    }
+  ]
+}
