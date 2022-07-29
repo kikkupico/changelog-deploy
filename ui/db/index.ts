@@ -42,6 +42,6 @@ export function makeDB(dir: string): DBType {
   return db;
 }
 
-const mainDirPath = path.join(process.cwd(), process.env.DATA_DIR_RUNTIME as string);
+const mainDirPath = path.join(process.cwd(), process.env.DATA_DIR as string);
 
 export default makeDB(mainDirPath);
