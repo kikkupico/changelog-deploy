@@ -1,3 +1,3 @@
 export default async function handler(req, res) {
-  res.status(200).text(process.cwd());
+  res.status(200).json({ dir: process.cwd() });
 }
