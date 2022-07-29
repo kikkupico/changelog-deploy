@@ -24,7 +24,3 @@ export default async function handler(
 
   res.status(200).json(items);
 }
-
-export const config = {
-  unstable_includeFiles: [process.env.DATA_DIR],
-};
