@@ -1,7 +1,7 @@
 {
   "functions": {
-    "pages/api/items/index.ts": {
-      "includeFiles": "./data/*"
+    "api/items/index.ts": {
+      "includeFiles": "./data/**/*"
     }
   }
 }
