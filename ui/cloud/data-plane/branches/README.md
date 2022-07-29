@@ -1,0 +1,1 @@
+Changelogs for Data Plane of Hasura Cloud generated from main branch of the [monorepo](https://github.com/hasura/graphql-engine-mono).

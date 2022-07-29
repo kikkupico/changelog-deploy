@@ -1,0 +1,37 @@
+version = 1
+repo_path = "/home/scriptnull/hasura/graphql-engine-mono"
+
+[changelog]
+[changelog.commit_picker]
+[changelog.commit_picker.commit_range]
+from_ref = "v2.8.3"
+to_ref = "v2.8.4"
+
+[changelog.extractor]
+[changelog.extractor.github_pull_request]
+pr_url_pattern = ".*PR-URL: (?P<url>.+)"
+pr_url_regex_group_name = "url"
+[changelog.extractor.github_pull_request.parser_config]
+parsers = [
+    { parser = "parse_and_consume_till_h2_heading", args = { value="Changelog ✍️" } },
+    { parser = "parse_colon_separated_key_value_to_var", args = { key="__Component__", value_var_name = "component" } },
+    { parser = "parse_colon_separated_key_value_to_var", args = { key="__Type__", value_var_name = "type" } },
+    { parser = "parse_colon_separated_key_value_to_var", args = { key="__Product__", value_var_name = "product" } },
+    { parser = "parse_heading_to_heading_content_to_var", args = { level=3, heading_value="Short Changelog", content_var_name = "short_changelog" } },
+    { parser = "parse_heading_to_heading_content_to_var", args = { level=3, heading_value="Long Changelog", content_var_name = "long_changelog" } },
+]
+
+[changelog.generator]
+extractor_output_json_path="./extractor.json"
+
+# [changelog.generator.output_config]
+# template_path="./template.md"
+# dest_path="."
+# dest_file_name="changelog.md"
+# sha256_sum_path="changelog.sha256"
+
+[changelog.generator.output_config]
+template_path="./template.json.tmpl"
+dest_path="."
+dest_file_name="changelog.json"
+sha256_sum_path="changelog.json.sha256"

@@ -1,0 +1,14 @@
+{
+  "release_date": "1658399640",
+  "type": "update",
+  "changelogs": [
+    {{#each this}}
+    {
+      "component": "{{GHPr.entries.component}}",
+      "type": "{{GHPr.entries.type}}",
+      "short_description": "{{GHPr.entries.short_changelog}}",
+      "long_description": "{{GHPr.entries.long_changelog}}"
+    },
+    {{/each}}
+  ]
+}
